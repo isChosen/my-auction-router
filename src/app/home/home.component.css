@@ -1,8 +1,8 @@
 
-.product {
+.home {
     float: left;
     width: 70%;
     min-height: 200px;
     box-sizing: border-box;
-    background: lightsalmon;
+    background: aqua;
 }

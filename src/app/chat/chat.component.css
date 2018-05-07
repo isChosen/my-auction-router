@@ -1,8 +1,8 @@
 
-.product {
+.chat {
     float: left;
-    width: 70%;
+    width: 30%;
     min-height: 200px;
     box-sizing: border-box;
-    background: lightsalmon;
+    background: cornflowerblue;
 }

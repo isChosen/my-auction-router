@@ -11,6 +11,6 @@ export class AppComponent {
   constructor(private router: Router) {}
 
   goProduct(): void {
-    this.router.navigate(['/product', 1, 'xysf']);
+    this.router.navigate(['/product', 2, 'xysf']);
   }
 }

@@ -10,7 +10,6 @@ export class ProductComponent implements OnInit {
 
   private productId: number;
   private productName: string;
-
   constructor(private routeInfo: ActivatedRoute) { }
 
   ngOnInit() {
@@ -18,6 +17,19 @@ export class ProductComponent implements OnInit {
       this.productId = params['id'];
       this.productName = params['name'];
     });
+
+    this.routeInfo.data.subscribe((data: {product: Product}) => {
+      // console.log('data: ', data);
+      this.productId = data.product.id;
+      this.productName = data.product.name;
+    });
   }
 
+}
+
+export class Product {
+  constructor(
+    public id: number,
+    public name: string
+  ) {}
 }

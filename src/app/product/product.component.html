@@ -1,5 +1,11 @@
-<p>
-  product works!
-</p>
-<p>商品id: {{productId}}</p>
-<p>商品name: {{productName}}</p>
+<div class="product">
+
+  <p>
+    product works!
+  </p>
+  <p>商品id: {{productId}}</p>
+  <p>商品name: {{productName}}</p>
+  <a [routerLink]="['./']">商品信息</a>
+  <a [routerLink]="['./seller', 22]">销售员信息</a>
+  <router-outlet></router-outlet>
+</div>
