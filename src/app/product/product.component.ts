@@ -18,8 +18,8 @@ export class ProductComponent implements OnInit {
       this.productName = params['name'];
     });
 
-    this.routeInfo.data.subscribe((data: {product: Product}) => {
-      // console.log('data: ', data);
+    this.routeInfo.data.subscribe((data: {product: Product}) => { // product 参数名一定要和 routing 中的属性名对应!
+      console.log('data: ', data);
       this.productId = data.product.id;
       this.productName = data.product.name;
     });
